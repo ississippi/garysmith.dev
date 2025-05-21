@@ -76,18 +76,21 @@
         <h2 class="text-2xl font-bold text-center mb-6">Testimonials</h2>
         <div class="swiper-container">
           <div class="swiper-wrapper">
+            <!-- Each .swiper-slide represents a testimonial -->
+            <!-- Only the first 3 are shown here for brevity; more will be injected in next steps -->
             <div class="swiper-slide bg-white rounded-xl shadow-md p-6">
-              <p class="italic">"I worked with Gary most of my time at LPL and I came to truly value him as a collaborator and a solid delivery guy..."</p>
+              <p class="italic">"I worked with Gary most of my time at LPL and I came to truly value him as a collaborator and a solid delivery guy. Gary led a team on a high-pressure, high-stakes effort on which the company relied and he delivered consistently..."</p>
               <p class="mt-4 font-semibold">– Russ Brown, Distinguished Architect, LPL Financial</p>
             </div>
             <div class="swiper-slide bg-white rounded-xl shadow-md p-6">
-              <p class="italic">"Gary is a talented developer and a great partner with our application security team..."</p>
+              <p class="italic">"Gary is a talented developer and a great partner with our application security team. Even with a heavy workload and pressures from many directions, Gary is always looking to do the right thing and ensure the team around him succeeds..."</p>
               <p class="mt-4 font-semibold">– Chad Girouard, Application Security, LPL Financial</p>
             </div>
             <div class="swiper-slide bg-white rounded-xl shadow-md p-6">
               <p class="italic">"Gary's expertise, leadership, and technical vision were absolutely critical to the success of this highly complex and impactful project..."</p>
               <p class="mt-4 font-semibold">– Sal Messaly, EPMO Agile Delivery, LPL Financial</p>
             </div>
+            <!-- Additional testimonials will go here... -->
           </div>
           <div class="swiper-button-prev"></div>
           <div class="swiper-button-next"></div>
@@ -112,6 +115,10 @@
     <script>
       const swiper = new Swiper('.swiper-container', {
         loop: true,
+        autoplay: {
+          delay: 6000,
+          disableOnInteraction: false
+        },
         pagination: {
           el: '.swiper-pagination',
           clickable: true
