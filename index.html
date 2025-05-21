@@ -5,20 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gary Smith - Cloud Architect</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script>
-      const swiper = new Swiper('.swiper-container', {
-        loop: true,
-        pagination: {
-          el: '.swiper-pagination',
-          clickable: true
-        },
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev'
-        }
-      });
-    </script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
   </head>
   <body class="bg-gray-50 text-gray-900">
     <header class="bg-blue-900 text-white text-center py-10">
@@ -33,6 +20,7 @@
         <li><a href="#experience" class="hover:underline">Experience</a></li>
         <li><a href="#skills" class="hover:underline">Skills</a></li>
         <li><a href="#portfolio" class="hover:underline">Portfolio</a></li>
+        <li><a href="#testimonials" class="hover:underline">Testimonials</a></li>
         <li><a href="#contact" class="hover:underline">Contact</a></li>
       </ul>
     </nav>
@@ -83,38 +71,27 @@
         <h2 class="text-2xl font-bold mb-4">Portfolio</h2>
         <p class="italic">Coming soon — code samples, GitHub links, and case studies.</p>
       </section>
-      <section class="bg-gray-100 py-12" id="testimonials">
-        <div class="max-w-4xl mx-auto px-4">
-          <h2 class="text-3xl font-bold text-center mb-8">Testimonials</h2>
-          <div class="relative overflow-hidden">
-            <div class="swiper-container">
-              <div class="swiper-wrapper">
-      
-                <!-- Slide 1 -->
-                <div class="swiper-slide bg-white rounded-xl shadow-md p-6">
-                  <p class="italic text-gray-800">"I worked with Gary most of my time at LPL and I came to truly value him as a collaborator and a solid delivery guy. Gary led a team on a high-pressure, high-stakes effort on which the company relied and he delivered consistently..."</p>
-                  <p class="mt-4 font-semibold">– Russ Brown, Distinguished Architect, LPL Financial</p>
-                </div>
-      
-                <!-- Slide 2 -->
-                <div class="swiper-slide bg-white rounded-xl shadow-md p-6">
-                  <p class="italic text-gray-800">"Gary is a talented developer and a great partner with our application security team. Even with a heavy workload and pressures from many directions, Gary is always looking to do the right thing and ensure the team around him succeeds..."</p>
-                  <p class="mt-4 font-semibold">– Chad Girouard, Application Security, LPL Financial</p>
-                </div>
-      
-                <!-- Slide 3 -->
-                <div class="swiper-slide bg-white rounded-xl shadow-md p-6">
-                  <p class="italic text-gray-800">"Gary's expertise, leadership, and technical vision were absolutely critical to the success of this highly complex and impactful project... It's rare to encounter someone with Gary's technical acumen, leadership qualities, and dedication..."</p>
-                  <p class="mt-4 font-semibold">– Sal Messaly, EPMO Agile Delivery, LPL Financial</p>
-                </div>
-      
-              </div>
-              <!-- Swiper navigation buttons -->
-              <div class="swiper-button-next"></div>
-              <div class="swiper-button-prev"></div>
-              <div class="swiper-pagination mt-4 text-center"></div>
+
+      <section id="testimonials" class="mb-10">
+        <h2 class="text-2xl font-bold text-center mb-6">Testimonials</h2>
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide bg-white rounded-xl shadow-md p-6">
+              <p class="italic">"I worked with Gary most of my time at LPL and I came to truly value him as a collaborator and a solid delivery guy..."</p>
+              <p class="mt-4 font-semibold">– Russ Brown, Distinguished Architect, LPL Financial</p>
+            </div>
+            <div class="swiper-slide bg-white rounded-xl shadow-md p-6">
+              <p class="italic">"Gary is a talented developer and a great partner with our application security team..."</p>
+              <p class="mt-4 font-semibold">– Chad Girouard, Application Security, LPL Financial</p>
+            </div>
+            <div class="swiper-slide bg-white rounded-xl shadow-md p-6">
+              <p class="italic">"Gary's expertise, leadership, and technical vision were absolutely critical to the success of this highly complex and impactful project..."</p>
+              <p class="mt-4 font-semibold">– Sal Messaly, EPMO Agile Delivery, LPL Financial</p>
             </div>
           </div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-pagination mt-4"></div>
         </div>
       </section>
 
@@ -130,5 +107,20 @@
     <footer class="bg-blue-900 text-white text-center py-6">
       <p>&copy; 2025 Gary Smith. All rights reserved.</p>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper('.swiper-container', {
+        loop: true,
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev'
+        }
+      });
+    </script>
   </body>
 </html>
